@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Steamroller</title>
+
+		<!-- Tailwind output file -->
+		<link rel="stylesheet" href="/styles/style.css" />
+
+		<!-- Script for the functionality -->
+		<script src="../scripts/steamroller.js" defer></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="h-screen w-screen antialiased">
+		<!-- Content box -->
+		<div class="grid place-content-center h-full overflow-hidden">
+			<!-- Inner box -->
+			<div class="p-16 md:shadow-md rounded-lg">
+				<!-- Heading -->
+				<h1 class="font-bold text-3xl md:text-4xl text-gray-200 mb-8">
+					Steamroller
+				</h1>
+
+				<!-- Form -->
+				<section>
+					<!-- First Input -->
+					<section>
+						<label class="label text-xs" for="arr">
+							<span class="label-text">Enter the array in JS format</span>
+						</label>
+						<input
+							type="text"
+							id="arr"
+							placeholder="Like [1,2,3,[[4]]]"
+							class="input input-bordered w-full max-w-xs text-sm mb-4 text-gray-300"
+						/>
+					</section>
+
+					<!-- Submit button -->
+					<button
+						class="btn btn-primary btn-sm mb-4"
+						onclick="steamrollArray()"
+					>
+						Submit
+					</button>
+
+					<!-- Output Section -->
+					<section>
+						<h3 class="mb-2 font-bold">Output:</h3>
+						<p id="result" class="w-full h-12 text-primary font-mono"></p>
+					</section>
+				</section>
+
+				<!-- Navigation Links -->
+				<nav class="flex justify-between flex-wrap gap-4">
+					<a
+						class="text-blue-500 font-semibold hover:text-violet-500 duration-300 text-sm"
+						href="/index.html"
+						>Back to Home</a
+					>
+					<a
+						class="text-blue-500 font-semibold hover:text-violet-500 duration-300 text-sm"
+						href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/steamroller"
+						target="_blank"
+						>FreeCodeCamp Link</a
+					>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
