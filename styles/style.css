@@ -1280,6 +1280,10 @@ html {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-center {
   place-content: center;
 }
