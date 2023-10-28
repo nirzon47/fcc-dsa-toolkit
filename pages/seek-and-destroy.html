@@ -23,8 +23,9 @@
 
 				<!-- Form -->
 				<section>
+					<!-- First Input -->
 					<section>
-						<label class="label text-xs">
+						<label class="label text-xs" for="arr">
 							<span class="label-text">Enter the array </span>
 						</label>
 						<input
@@ -34,8 +35,10 @@
 							class="input input-bordered w-full max-w-xs text-sm mb-4 text-gray-300"
 						/>
 					</section>
+
+					<!-- Second Input -->
 					<section>
-						<label class="label text-xs">
+						<label class="label text-xs" for="remove">
 							<span class="label-text">Enter the numbers to remove</span>
 						</label>
 						<input
@@ -45,6 +48,8 @@
 							class="input input-bordered w-full max-w-xs text-sm mb-6 text-gray-300"
 						/>
 					</section>
+
+					<!-- Submit button -->
 					<button
 						class="btn btn-primary btn-sm mb-4"
 						onclick="seekAndDestroy()"
@@ -52,6 +57,7 @@
 						Submit
 					</button>
 
+					<!-- Output Section -->
 					<section>
 						<h3 class="mb-2 font-bold">Output:</h3>
 						<p id="result" class="w-full h-12 text-primary font-mono"></p>
