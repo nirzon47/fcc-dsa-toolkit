@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Make a Person</title>
+
+		<!-- Tailwind output file -->
+		<link rel="stylesheet" href="/styles/style.css" />
+
+		<!-- Script for the functionality -->
+		<script src="../scripts/makePerson.js" defer></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="w-screen h-screen antialiased">
+		<!-- Content box -->
+		<div class="grid h-full overflow-hidden place-content-center">
+			<!-- Inner box -->
+			<div class="p-16 rounded-lg md:shadow-md">
+				<!-- Heading -->
+				<h1 class="mb-8 text-3xl font-bold text-gray-200 md:text-4xl">
+					Make a Person
+				</h1>
+
+				<!-- Form -->
+				<section>
+					<!-- First Input -->
+					<section>
+						<label class="text-xs label" for="arr">
+							<span class="label-text">Enter the first name</span>
+						</label>
+						<input
+							type="text"
+							id="fName"
+							placeholder="String only"
+							class="w-full max-w-xs mb-4 text-sm text-gray-300 input input-bordered"
+						/>
+					</section>
+
+					<!-- Second Input -->
+					<section>
+						<label class="text-xs label" for="arr">
+							<span class="label-text">Enter the second name</span>
+						</label>
+						<input
+							type="text"
+							id="lName"
+							placeholder="String only"
+							class="w-full max-w-xs mb-4 text-sm text-gray-300 input input-bordered"
+						/>
+					</section>
+
+					<!-- Submit button -->
+					<button class="mb-4 btn btn-primary btn-sm" onclick="Person()">
+						Submit
+					</button>
+
+					<!-- Output Section -->
+					<section>
+						<h3 class="mb-2 font-bold">Output:</h3>
+						<p id="result" class="w-full h-12 font-mono text-primary"></p>
+					</section>
+				</section>
+
+				<!-- Navigation Links -->
+				<nav class="flex flex-wrap justify-between gap-4">
+					<a
+						class="text-sm font-semibold text-blue-500 duration-300 hover:text-violet-500"
+						href="/index.html"
+						>Back to Home</a
+					>
+					<a
+						class="text-sm font-semibold text-blue-500 duration-300 hover:text-violet-500"
+						href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/make-a-person"
+						target="_blank"
+						>FreeCodeCamp Link</a
+					>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
